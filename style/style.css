@@ -40,6 +40,48 @@ body{
 	border-radius: 15px;
 	position: relative;
 }
+.info .data{
+	margin-left: -30px; 
+	float: none;
+	width: 400px;
+}
+.info .data {
+	padding-left: 60px;
+}
+.info .data span:first-child{
+	font: 30px arial;
+	margin-right: 20px;
+	float: left;
+}
+.info .data p{
+	float: left;
+	background-color: #389aba;
+	margin-top: 5px;
+	font-size: 15px;
+	padding: 4px;
+	margin-right: 10px;
+	opacity: 0.8;
+	color: #fff;
+	border-radius: 3px;
+}
+.info .data p:hover{
+	cursor: pointer;
+	opacity: 1.0;
+}
+.info .description{
+	margin-left: 0px;
+	margin-top: 10px;
+  padding-left: 140px;
+  line-height:20px;
+  text-indent: 2.5em;
+}
+.switch span.team{
+	position:absolute;
+	font: 100px cursive;
+	bottom:20px;
+	right:30px;
+	color:rgb(255,200,27);
+}
 .circle{
 	width: 45px;
 	height: 45px;
@@ -115,48 +157,4 @@ body{
 	border: 0px solid #4cb6e1;
 	opacity:0.6;
 	filter:alpha(opacity:60);
-}
-
-/*pluto*/
-.info .data{
-	margin-left: -30px; 
-	float: none;
-	width: 400px;
-}
-.info .data {
-	padding-left: 60px;
-}
-.info .data span:first-child{
-	font: 30px arial;
-	margin-right: 20px;
-	float: left;
-}
-.info .data p{
-	float: left;
-	background-color: #389aba;
-	margin-top: 5px;
-	font-size: 15px;
-	padding: 4px;
-	margin-right: 10px;
-	opacity: 0.8;
-	color: #fff;
-	border-radius: 3px;
-}
-.info .data p:hover{
-	cursor: pointer;
-	opacity: 1.0;
-}
-.info .description{
-	margin-left: 0px;
-	margin-top: 10px;
-  padding-left: 140px;
-  line-height:20px;
-  text-indent: 2.5em;
-}
-.switch span.team{
-	position:absolute;
-	font: 100px cursive;
-	bottom:20px;
-	right:30px;
-	color:rgb(255,200,27);
 }
