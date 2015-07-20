@@ -75,22 +75,26 @@ body{
 }
 .info img{
 	float: left;
+	/*淡入效果start*/
 	-webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  /*淡入效果end*/
 }
 .info .data{
 	overflow: hidden;
 	padding-left: 60px;
+	/*淡入效果start*/
 	-webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  /*淡入效果end*/
 }
 .info .data span{
 	font: 30px "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -120,14 +124,14 @@ body{
   padding-left: 140px;
   line-height:20px;
   text-indent: 2.5em;
-  /*淡入效果--start*/
+  /*滑入效果--start*/
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  /*淡出效果--end*/
+  /*滑入效果--end*/
 }
 .footer{
 	position: fixed;
