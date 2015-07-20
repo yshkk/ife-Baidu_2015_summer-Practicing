@@ -8,17 +8,17 @@
 </head>
 <body>
 	<div class="container">
-
+		
 		<!-- 中间部分 -->
 		<div class="section">
-		    <div class="circle">
-		    </div>
-		    <div class="title">
+			<div class="mark"></div>
+			<span class="team">notFound<i id="i_special">_</i></span>			
+		  <div class="circle"></div>
+		  <div class="title">
 				<h4>404</h4>
 				<h3>很抱歉！页面已经notFound，但我知道你想找到他们...</h3>
 			</div>	
 			<div class="switch">
-				<span class="team">notFound<i id="i_special">_<i></span>
 				<!-- 这里6个div -->
 				<div class="info">
 					<img src="image_index/pluto.jpg" alt="" width="110" height="110">
@@ -159,8 +159,8 @@
 		addEvent(li[i],'mouseout',function(){
 				span[1].timer=setInterval('span[1].click()',3000);});
 	}
-	//3秒定时轮播
-	span[1].timer=setInterval('span[1].click()',4000);
+	// 3秒定时轮播
+	span[1].timer=setInterval('span[1].click()',3000);
 	special.timer=setInterval(function(){
 		special.style.visibility='hidden';
 		setTimeout('special.style.visibility="visible"',100);

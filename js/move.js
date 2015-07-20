@@ -5,7 +5,7 @@ function doEvent(elem,type){  //事件触发兼容函数
 	return document.dispatchEvent?elem.dispatchEvent(type):elem.fireEvent('on'+type);
 }
 function getStyle(obj,name){  //样式获取兼容函数
-	return window.getComputedStyle?window.getComputedStyle(obj)[name]:obj.currentStyle[name];
+	return obj.currentStyle?obj.currentStyle[name]:window.getComputedStyle(obj)[name];
 }
 function getByClass(obj,names){
     if(obj.getElementsByClassName){
@@ -162,7 +162,7 @@ function move_B(obj,json,callback){  //运动函数 对象、属性、运动终�
 					obj.style.filter='alpha(opacity:'+json[arr][0]*100+')';
 				}	
 			}else{  //正常px后缀属性处理
-				speed[arr]=(speed[arr]>0)?Math.ceil(speed[arr]):Math.floor(speed[arr]);
+				speed[arr]=(speed[arr]>0)?Math.ceil(speed[arr]):Math.floor(speed[arr]);				
 				if(Math.abs(json[arr][0]-cur[arr])>Math.abs(speed[arr])){
 					obj.style[arr]=cur[arr]+speed[arr]+'px';
 					flag=false;
